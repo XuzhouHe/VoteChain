@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Votechain.srcs/sources_1/ip/currt_block/sim/currt_block.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

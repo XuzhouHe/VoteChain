@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 28 17:33:36 2019" VIVADOVERSION="2018.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.0" DEVICE="7z020" NAME="votechain_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="BTNC" SIGIS="undef" SIGNAME="External_Ports_BTNC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="BTNC_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTND" SIGIS="undef" SIGNAME="External_Ports_BTND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="BTND_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNL" SIGIS="undef" SIGNAME="External_Ports_BTNL">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="BTNL_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNR" SIGIS="undef" SIGNAME="External_Ports_BTNR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="BTNR_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNU" SIGIS="undef" SIGNAME="External_Ports_BTNU">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="BTNU_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="S_AXI_ARESETN_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="receiving" SIGIS="undef" SIGNAME="External_Ports_receiving">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="receiving_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="user_ID" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_user_ID">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="user_ID_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="system_onQ" SIGIS="undef" SIGNAME="External_Ports_system_onQ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="system_onQ_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="LD" RIGHT="0" SIGIS="undef" SIGNAME="votechain1_0_LD_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="votechain1_0" PORT="LD_0"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/votechain1_0" HWVERSION="1.0" INSTANCE="votechain1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="votechain1" VLNV="xilinx.com:user:votechain1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="votechain_1_votechain1_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="BTNC_0" SIGIS="undef" SIGNAME="External_Ports_BTNC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTND_0" SIGIS="undef" SIGNAME="External_Ports_BTND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNL_0" SIGIS="undef" SIGNAME="External_Ports_BTNL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNR_0" SIGIS="undef" SIGNAME="External_Ports_BTNR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNU_0" SIGIS="undef" SIGNAME="External_Ports_BTNU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LD_0" RIGHT="0" SIGIS="undef" SIGNAME="votechain1_0_LD_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN_0" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="receiving_0" SIGIS="undef" SIGNAME="External_Ports_receiving">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="receiving"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="system_onQ_0" SIGIS="undef" SIGNAME="External_Ports_system_onQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="system_onQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="user_ID_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_user_ID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="user_ID"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

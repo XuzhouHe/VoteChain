@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr 28 10:58:24 2019
+# Process ID: 71580
+# Current directory: H:/Documents/Votechain/VotechainIP/Votechain.runs/synth_1
+# Command line: vivado.exe -log votechain1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source votechain1_wrapper.tcl
+# Log file: H:/Documents/Votechain/VotechainIP/Votechain.runs/synth_1/votechain1_wrapper.vds
+# Journal file: H:/Documents/Votechain/VotechainIP/Votechain.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source votechain1_wrapper.tcl -notrace

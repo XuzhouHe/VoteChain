@@ -1,0 +1,7 @@
+Running: xsim.dir/votechain_tb_behav/xsimk.exe -simmode gui -wdb votechain_tb_behav.wdb -simrunnum 0 -socket 55861
+Design successfully loaded
+Design Loading Memory Usage: 5072 KB (Peak: 5072 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 13916 KB (Peak: 13916 KB)
+Simulation CPU Usage: 209155 ms

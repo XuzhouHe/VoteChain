@@ -1,0 +1,506 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr 28 00:40:13 2019
+# Process ID: 12100
+# Current directory: H:/Documents/Votechain/VotechainIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5112 H:\Documents\Votechain\VotechainIP\Votechain.xpr
+# Log file: H:/Documents/Votechain/VotechainIP/vivado.log
+# Journal file: H:/Documents/Votechain/VotechainIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Documents/Votechain/VotechainIP/Votechain.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'H:/ESE498_Capstone/ip_repo'.
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'H:/Documents/Votechain/votechain_ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/ESE498_Capstone/votechain_ip'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/ESE498_Capstone/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'h:/Documents/Votechain/votechain_ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/Documents/Votechain/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 910.668 ; gain = 157.016
+update_compile_order -fileset sources_1
+open_bd_design {H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd}
+Adding cell -- xilinx.com:module_ref:BRAM:1.0 - BRAM_0
+Adding cell -- xilinx.com:module_ref:controller:1.0 - controller_0
+Adding cell -- xilinx.com:module_ref:data_validation:1.0 - data_validation_0
+Adding cell -- xilinx.com:module_ref:button_debounce:1.0 - button_debounce_0
+Adding cell -- xilinx.com:module_ref:data_mining:1.0 - data_mining_0
+Successfully read diagram <votechain1> from BD file <H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 974.805 ; gain = 64.137
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Apps/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'votechain_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj votechain_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_validation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_validation
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/addr_timing_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_timing_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/k_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module k_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/sha256_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha256_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/update_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module update_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/w_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_mining.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mining
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_controller_0_0/sim/votechain1_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_BRAM_0_0/sim/votechain1_BRAM_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_BRAM_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_validation_0_0/sim/votechain1_data_validation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_validation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_button_debounce_0_0/sim/votechain1_button_debounce_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_button_debounce_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_mining_0_0/sim/votechain1_data_mining_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_mining_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/sim/votechain1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hdl/votechain1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sim_1/new/votechain_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Apps/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b036348d864345dcabf90f11f60a3bfd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot votechain_tb_behav xil_defaultlib.votechain_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 17 for port msg_ram_read_addr [H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_mining.v:98]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sram
+Compiling module xil_defaultlib.BRAM
+Compiling module xil_defaultlib.votechain1_BRAM_0_0
+Compiling module xil_defaultlib.button_debounce
+Compiling module xil_defaultlib.votechain1_button_debounce_0_0
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.votechain1_controller_0_0
+Compiling module xil_defaultlib.addr_timing_ctrl(msgAddr_BW=16)
+Compiling module xil_defaultlib.w_ram(msgAddr_BW=16)
+Compiling module xil_defaultlib.extend(msgAddr_BW=16)
+Compiling module xil_defaultlib.k_rom
+Compiling module xil_defaultlib.update_h(msgAddr_BW=16)
+Compiling module xil_defaultlib.sha256_top
+Compiling module xil_defaultlib.data_mining
+Compiling module xil_defaultlib.votechain1_data_mining_0_0
+Compiling module xil_defaultlib.data_validation
+Compiling module xil_defaultlib.votechain1_data_validation_0_0
+Compiling module xil_defaultlib.votechain1
+Compiling module xil_defaultlib.votechain1_wrapper
+Compiling module xil_defaultlib.votechain_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot votechain_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "votechain_tb_behav -key {Behavioral:sim_1:Functional:votechain_tb} -tclbatch {votechain_tb.tcl} -view {H:/Documents/Votechain/VotechainIP/votechain_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config H:/Documents/Votechain/VotechainIP/votechain_tb_behav.wcfg
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/dm_ena was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/bram_addr was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/bram_data was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/dm_ena was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/bram_addr was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/bram_data was not found in the design.
+source votechain_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'votechain_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1009.383 ; gain = 29.340
+run all
+run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:43 . Memory (MB): peak = 1027.496 ; gain = 17.563
+ipx::package_project -root_dir H:/ESE498_Capstone/votechain_ip -vendor wustl.edu -library user -taxonomy /UserIP -module votechain1 -import_files -force
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BRAM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_validation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block button_debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_mining_0 .
+WARNING: [IP_Flow 19-4963] votechain1_controller_0_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zedboard:part0:1.0'
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK.CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3157] Bus Interface 'RST.S_AXI_ARESETN_0': Bus parameter POLARITY is ACTIVE_LOW but port 'S_AXI_ARESETN_0' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::create_xgui_files [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::update_checksums [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::save_core [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+update_ip_catalog -rebuild -repo_path h:/ESE498_Capstone/votechain_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'h:/ESE498_Capstone/votechain_ip'
+ipx::unload_core h:/ESE498_Capstone/votechain_ip/component.xml
+run all
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.492 ; gain = 1.563
+open_project H:/ESE498_Capstone/final_votechain/final_votechain.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/ESE498_Capstone/votechain_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'votechain_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+votechain_1_votechain1_0_0
+
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1099.258 ; gain = 27.766
+update_compile_order -fileset sources_1
+open_bd_design {H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd}
+Adding cell -- wustl.edu:user:votechain1:1.0 - votechain1_0
+Successfully read diagram <votechain_1> from BD file <H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1144.211 ; gain = 44.953
+report_ip_status -name ip_status 
+upgrade_ip -vlnv wustl.edu:user:votechain1:1.0 [get_ips  votechain_1_votechain1_0_0] -log ip_upgrade.log
+Upgrading 'H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded votechain_1_votechain1_0_0 from votechain1_v1_0 1.0 to votechain1_v1_0 1.0
+Wrote  : <H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'H:/ESE498_Capstone/final_votechain/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips votechain_1_votechain1_0_0] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode None [get_files  H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd]
+generate_target all [get_files  H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd]
+Wrote  : <H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd> 
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/synth/votechain_1.v
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/sim/votechain_1.v
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hdl/votechain_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block votechain1_0 .
+Exporting to file H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hw_handoff/votechain_1.hwh
+Generated Block Design Tcl file H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hw_handoff/votechain_1_bd.tcl
+Generated Hardware Definition File H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/synth/votechain_1.hwdef
+export_ip_user_files -of_objects [get_files H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd] -directory H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/sim_scripts -ip_user_files_dir H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files -ipstatic_source_dir H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/ipstatic -lib_map_path [list {modelsim=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/modelsim} {questa=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/questa} {riviera=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/riviera} {activehdl=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Apr 28 00:44:59 2019] Launched synth_1...
+Run output will be captured here: H:/ESE498_Capstone/final_votechain/final_votechain.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Apr 28 00:46:52 2019] Launched impl_1...
+Run output will be captured here: H:/ESE498_Capstone/final_votechain/final_votechain.runs/impl_1/runme.log
+current_project Votechain
+open_bd_design {H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd}
+delete_bd_objs [get_bd_nets data_mining_0_dm_ena]
+connect_bd_net [get_bd_pins BRAM_0/dm_ena] [get_bd_pins data_mining_0/dm_enaQ]
+connect_bd_net [get_bd_pins data_mining_0/bram_addrQ] [get_bd_pins BRAM_0/dm_addr]
+save_bd_design
+Wrote  : <H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd> 
+Wrote  : <H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/ui/bd_95b8e0fa.ui> 
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /BRAM_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /controller_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /data_validation_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /button_debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /data_mining_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+save_bd_design
+Wrote  : <H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd> 
+current_project final_votechain
+current_project Votechain
+current_project final_votechain
+ipx::package_project -root_dir H:/ESE498_Capstone/votechain_ip -vendor wustl.edu -library user -taxonomy /UserIP -module votechain_1 -import_files -force
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'votechain_1' - hence not re-generating.
+WARNING: [IP_Flow 19-4963] votechain_1_votechain1_0_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zedboard:part0:1.0'
+WARNING: [IP_Flow 19-3157] Bus Interface 'RST.RST': Bus parameter POLARITY is ACTIVE_LOW but port 'rst' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK.CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3155] Bus Interface 'CLK.CLK': ASSOCIATED_RESET port 'S_AXI_ARESETN' does not exist.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::create_xgui_files [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::update_checksums [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::save_core [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+current_project Votechain
+update_ip_catalog -rebuild -repo_path h:/ESE498_Capstone/votechain_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'h:/ESE498_Capstone/votechain_ip'
+set_property core_revision 3 [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::create_xgui_files [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::update_checksums [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+ipx::save_core [ipx::find_open_core wustl.edu:user:votechain_1:1.0]
+update_ip_catalog -rebuild -repo_path h:/ESE498_Capstone/votechain_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'h:/ESE498_Capstone/votechain_ip'
+ipx::unload_core h:/ESE498_Capstone/votechain_ip/component.xml
+open_bd_design {H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd}
+validate_bd_design -force
+WARNING: [BD 41-927] Following properties on pin /BRAM_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /controller_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /data_validation_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /button_debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+WARNING: [BD 41-927] Following properties on pin /data_mining_0/S_AXI_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=votechain1_clk 
+ipx::package_project -root_dir H:/ESE498_Capstone/votechain_ip -vendor wustl.edu -library user -taxonomy /UserIP -module votechain1 -import_files -force
+INFO: [BD 41-1662] The design 'votechain1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/synth/votechain1.v
+VHDL Output written to : H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/sim/votechain1.v
+VHDL Output written to : H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hdl/votechain1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BRAM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_validation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block button_debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_mining_0 .
+Exporting to file H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hw_handoff/votechain1.hwh
+Generated Block Design Tcl file H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hw_handoff/votechain1_bd.tcl
+Generated Hardware Definition File H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/synth/votechain1.hwdef
+WARNING: [IP_Flow 19-4963] votechain1_controller_0_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zedboard:part0:1.0'
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK.CLK': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3157] Bus Interface 'RST.S_AXI_ARESETN_0': Bus parameter POLARITY is ACTIVE_LOW but port 'S_AXI_ARESETN_0' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::create_xgui_files [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::update_checksums [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+ipx::save_core [ipx::find_open_core wustl.edu:user:votechain1:1.0]
+update_ip_catalog -rebuild -repo_path h:/ESE498_Capstone/votechain_ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'h:/ESE498_Capstone/votechain_ip'
+current_project final_votechain
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/ESE498_Capstone/votechain_ip'.
+report_ip_status -name ip_status
+current_project Votechain
+current_project final_votechain
+upgrade_ip -vlnv wustl.edu:user:votechain1:1.0 [get_ips  votechain_1_votechain1_0_0] -log ip_upgrade.log
+Upgrading 'H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded votechain_1_votechain1_0_0 from votechain1_v1_0 1.0 to votechain1_v1_0 1.0
+Wrote  : <H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'H:/ESE498_Capstone/final_votechain/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips votechain_1_votechain1_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd]
+Wrote  : <H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd> 
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/synth/votechain_1.v
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/sim/votechain_1.v
+VHDL Output written to : H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hdl/votechain_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block votechain1_0 .
+Exporting to file H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hw_handoff/votechain_1.hwh
+Generated Block Design Tcl file H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/hw_handoff/votechain_1_bd.tcl
+Generated Hardware Definition File H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/synth/votechain_1.hwdef
+export_ip_user_files -of_objects [get_files H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files H:/ESE498_Capstone/final_votechain/final_votechain.srcs/sources_1/bd/votechain_1/votechain_1.bd] -directory H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/sim_scripts -ip_user_files_dir H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files -ipstatic_source_dir H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/ipstatic -lib_map_path [list {modelsim=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/modelsim} {questa=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/questa} {riviera=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/riviera} {activehdl=H:/ESE498_Capstone/final_votechain/final_votechain.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/ESE498_Capstone/final_votechain/final_votechain.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Apps/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'H:/ESE498_Capstone/final_votechain/final_votechain.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'votechain_1_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/ESE498_Capstone/final_votechain/final_votechain.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj votechain_1_wrapper_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/sim/votechain_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_BRAM_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_BRAM_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_validation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_validation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_button_debounce_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_button_debounce_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_mining_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_mining_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/data_validation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_validation
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/addr_timing_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_timing_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/k_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module k_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/sha256_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha256_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/update_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module update_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/w_ram.v" into library xil_defaultlib
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Apr 28 01:03:35 2019] Launched synth_1...
+Run output will be captured here: H:/ESE498_Capstone/final_votechain/final_votechain.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Apr 28 01:06:52 2019] Launched impl_1...
+Run output will be captured here: H:/ESE498_Capstone/final_votechain/final_votechain.runs/impl_1/runme.log
+ipx::unload_core h:/ESE498_Capstone/votechain_ip/component.xml
+current_project Votechain
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Apps/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'votechain_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj votechain_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_validation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_validation
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/addr_timing_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_timing_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/k_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module k_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/sha256_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha256_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/update_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module update_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/w_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_mining.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mining
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_controller_0_0/sim/votechain1_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_BRAM_0_0/sim/votechain1_BRAM_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_BRAM_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_validation_0_0/sim/votechain1_data_validation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_validation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_button_debounce_0_0/sim/votechain1_button_debounce_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_button_debounce_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_mining_0_0/sim/votechain1_data_mining_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_mining_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.ip_user_files/bd/votechain1/sim/votechain1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hdl/votechain1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Documents/Votechain/VotechainIP/Votechain.srcs/sim_1/new/votechain_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Apps/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b036348d864345dcabf90f11f60a3bfd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot votechain_tb_behav xil_defaultlib.votechain_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 17 for port msg_ram_read_addr [H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/new/data_mining.v:98]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sram
+Compiling module xil_defaultlib.BRAM
+Compiling module xil_defaultlib.votechain1_BRAM_0_0
+Compiling module xil_defaultlib.button_debounce
+Compiling module xil_defaultlib.votechain1_button_debounce_0_0
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.votechain1_controller_0_0
+Compiling module xil_defaultlib.addr_timing_ctrl(msgAddr_BW=16)
+Compiling module xil_defaultlib.w_ram(msgAddr_BW=16)
+Compiling module xil_defaultlib.extend(msgAddr_BW=16)
+Compiling module xil_defaultlib.k_rom
+Compiling module xil_defaultlib.update_h(msgAddr_BW=16)
+Compiling module xil_defaultlib.sha256_top
+Compiling module xil_defaultlib.data_mining
+Compiling module xil_defaultlib.votechain1_data_mining_0_0
+Compiling module xil_defaultlib.data_validation
+Compiling module xil_defaultlib.votechain1_data_validation_0_0
+Compiling module xil_defaultlib.votechain1
+Compiling module xil_defaultlib.votechain1_wrapper
+Compiling module xil_defaultlib.votechain_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot votechain_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Documents/Votechain/VotechainIP/Votechain.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "votechain_tb_behav -key {Behavioral:sim_1:Functional:votechain_tb} -tclbatch {votechain_tb.tcl} -view {H:/Documents/Votechain/VotechainIP/votechain_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config H:/Documents/Votechain/VotechainIP/votechain_tb_behav.wcfg
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/dm_ena was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/bram_addr was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/bram_data was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/dm_ena was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/bram_addr was not found in the design.
+WARNING: Simulation object /votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/bram_data was not found in the design.
+source votechain_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'votechain_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1364.340 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:10 ; elapsed = 00:01:01 . Memory (MB): peak = 1364.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 01:13:14 2019...

@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/sim/votechain_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_BRAM_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_BRAM_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_validation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_validation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_button_debounce_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_button_debounce_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_mining_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_mining_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/data_validation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_validation
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/addr_timing_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_timing_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/k_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module k_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/sha256_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha256_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/update_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module update_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/ESE498_Capstone/final_votechain/final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/w_ram.v" into library xil_defaultlib

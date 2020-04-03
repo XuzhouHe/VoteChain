@@ -1,0 +1,55 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port system_onQ_0 -pg 1 -y 140 -defaultsOSRD
+preplace port receiving_0 -pg 1 -y 70 -defaultsOSRD
+preplace port BTNR_0 -pg 1 -y 380 -defaultsOSRD
+preplace port BTND_0 -pg 1 -y 360 -defaultsOSRD
+preplace port BTNU_0 -pg 1 -y 340 -defaultsOSRD
+preplace port BTNL_0 -pg 1 -y 400 -defaultsOSRD
+preplace port S_AXI_ARESETN_0 -pg 1 -y 240 -defaultsOSRD
+preplace port clk -pg 1 -y 170 -defaultsOSRD
+preplace port BTNC_0 -pg 1 -y 420 -defaultsOSRD
+preplace portBus LD_0 -pg 1 -y 770 -defaultsOSRD
+preplace portBus user_ID_0 -pg 1 -y 550 -defaultsOSRD
+preplace inst BRAM_0 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst data_validation_0 -pg 1 -lvl 3 -y 710 -defaultsOSRD
+preplace inst button_debounce_0 -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst data_mining_0 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
+preplace netloc data_mining_0_dm_done 1 2 3 -10 -20 440J -80 880
+preplace netloc controller_0_control_ena 1 3 1 410
+preplace netloc BTNR_0_1 1 0 2 N 380 -390
+preplace netloc data_validation_0_bram_addr 1 3 1 420
+preplace netloc data_validation_0_LD 1 3 2 NJ 770 NJ
+preplace netloc controller_0_bram_addr 1 3 1 390
+preplace netloc data_validation_0_dv_done 1 2 2 10 0 380
+preplace netloc button_debounce_0_votes 1 2 1 -60
+preplace netloc data_validation_0_bram_data 1 3 1 440
+preplace netloc controller_0_bram_data 1 3 1 400
+preplace netloc data_validation_0_config_dv_done 1 2 2 20 40 370
+preplace netloc S_AXI_ARESETN_0_1 1 0 4 NJ 240 -400J 240 -50J 20 430
+preplace netloc BTNU_0_1 1 0 2 -560 330 N
+preplace netloc BTND_0_1 1 0 2 N 360 -410
+preplace netloc data_validation_0_getVoteQ 1 1 3 -390J 530 NJ 530 360
+preplace netloc data_mining_0_dm_read_addr 1 3 2 480 -70 870
+preplace netloc BTNL_0_1 1 0 2 N 400 -370
+preplace netloc data_mining_0_dm_enaQ 1 3 2 470 -100 900
+preplace netloc BTNC_0_1 1 0 2 N 420 -370
+preplace netloc data_mining_0_bram_addrQ 1 3 2 490 -50 860
+preplace netloc data_mining_0_bram_data 1 3 2 460 -90 910
+preplace netloc controller_0_enableDM_Q 1 3 1 410
+preplace netloc controller_0_enableDV_Q 1 2 2 -20 -10 360
+preplace netloc controller_0_configQ 1 2 2 0 30 420
+preplace netloc system_onQ_0_1 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc user_ID_0_1 1 0 3 NJ 550 NJ 550 -70J
+preplace netloc data_validation_0_dv_ena 1 3 1 400
+preplace netloc BRAM_0_config_bram_done 1 2 3 20 510 NJ 510 860
+preplace netloc BRAM_0_dm_read_data 1 3 2 500 -60 890
+preplace netloc receiving_0_1 1 0 3 NJ 70 NJ 70 -40J
+preplace netloc S_AXI_ACLK_0_1 1 0 4 NJ 170 -380J 170 -30J 10 450
+levelinfo -pg 1 -580 -430 -180 200 680 930 -top -280 -bot 860
+",
+}
+0

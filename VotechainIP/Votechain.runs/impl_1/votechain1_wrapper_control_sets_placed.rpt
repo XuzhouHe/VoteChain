@@ -1,0 +1,188 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 28 11:01:51 2019
+| Host         : RDSH01-FL18 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file votechain1_wrapper_control_sets_placed.rpt
+| Design       : votechain1_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   120 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            3 |
+|     10 |            4 |
+|     12 |            1 |
+|     14 |            2 |
+|    16+ |          110 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             192 |           36 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            4162 |          660 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                                          Enable Signal                                          |                                         Set/Reset Signal                                        | Slice Load Count | Bel Load Count |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |              8 |
+|  clk_IBUF_BUFG                                |                                                                                                 |                                                                                                 |                4 |              8 |
+|  clk_IBUF_BUFG                                | votechain1_i/controller_0/inst/write_header_doneD                                               | votechain1_i/controller_0/inst/configQ_i_1_n_0                                                  |                2 |              8 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/sha256_top1/addr_timing_ctrl1/chunkCountQ_reg[3]                | votechain1_i/data_mining_0/inst/clear                                                           |                2 |             10 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/button_debounce_0/inst/newVote_reg_inv_n_0                                         |                3 |             10 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/data_mining_0/inst/clear                                                           |                4 |             10 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/timeoutD                                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             10 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/sha256_top1/addr_timing_ctrl1/w_processing_counter_2[5]_i_2_n_0 | votechain1_i/data_mining_0/inst/sha256_top1/addr_timing_ctrl1/w_processing_counter_2[5]_i_1_n_0 |                2 |             12 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/FSM_onehot_currentState[6]_i_1_n_0                          | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             14 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/numDataQ[6]_i_1_n_0                                         | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             14 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/controller_0/inst/configQ_i_1_n_0                                                  |                5 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[60][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[56][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[61][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                6 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[51][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[55][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[5][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[38][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[32][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[43][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[45][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[31][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[39][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[34][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[37][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[33][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[46][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[14][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[11][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[20][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[36][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[27][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[17][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[26][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[28][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[29][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[0][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[10][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[19][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[1][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[25][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[16][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[13][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[15][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[18][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[22][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[12][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[21][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[23][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[3][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[41][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[47][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                8 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[42][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[48][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[49][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[44][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[2][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[40][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[30][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[35][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[62][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[4][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[52][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[54][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[50][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[53][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[59][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[57][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[24][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[68][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[69][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[6][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[74][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[63][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[65][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                2 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[67][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[66][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[64][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[70][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[78][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[72][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[73][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[71][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[75][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                1 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[77][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[7][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[9][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                4 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[79][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                7 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[8][7]_i_1_n_0                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[58][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                3 |             16 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_arrayQ[76][7]_i_1_n_0                                    | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             16 |
+|  votechain1_i/button_debounce_0/inst/slow_clk |                                                                                                 |                                                                                                 |                5 |             20 |
+|  clk_IBUF_BUFG                                | votechain1_i/BRAM_0/inst/config_indexQ[13]_i_2_n_0                                              | votechain1_i/BRAM_0/inst/config_indexQ[13]_i_1_n_0                                              |                7 |             28 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/controller_0/inst/iQ[0]_i_1_n_0                                                    |                4 |             32 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/dm_done                                                         | votechain1_i/data_mining_0/inst/clear                                                           |                4 |             32 |
+|  clk_IBUF_BUFG                                | votechain1_i/controller_0/inst/block_addrD_0                                                    | votechain1_i/controller_0/inst/configQ_i_1_n_0                                                  |                7 |             32 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/current_addrQ[15]_i_1_n_0                                   | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                5 |             32 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/bram_dataQ[19]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                8 |             40 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/dv_enaD                                                     | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               10 |             52 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/button_debounce_0/inst/clear                                                       |                7 |             54 |
+|  clk_IBUF_BUFG                                |                                                                                                 | votechain1_i/data_mining_0/inst/sha256_top1/update_h1/p_0_in_0                                  |                9 |             62 |
+|  clk_IBUF_BUFG                                | votechain1_i/controller_0/inst/timestampD_1                                                     | votechain1_i/controller_0/inst/configQ_i_1_n_0                                                  |               13 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/nonce_Data_Q[31]_i_1_n_0                                        | votechain1_i/data_mining_0/inst/clear                                                           |                6 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/seed_data_Q[31]_i_1_n_0                                         | votechain1_i/data_mining_0/inst/clear                                                           |                7 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/enNonceQ                                                        | votechain1_i/data_mining_0/inst/clear                                                           |                9 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/i_Q0                                                            | votechain1_i/data_mining_0/inst/clear                                                           |                8 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/ID_indexQ[31]_i_1_n_0                                       | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               10 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/controller_0/inst/indexD_2                                                         | votechain1_i/controller_0/inst/configQ_i_1_n_0                                                  |               13 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/resultQ[0][31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               13 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/resultQ[1][31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               13 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/resultQ[3][31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               12 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/resultQ[2][31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               10 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/resultQ[4][31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |                9 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/timeoutCount_Q[31]_i_1_n_0                                  | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               12 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/vote_addrQ[31]_i_1_n_0                                      | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               12 |             64 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_validation_0/inst/iQ[31]_i_1_n_0                                              | votechain1_i/data_validation_0/inst/getVoteQ_i_1_n_0                                            |               14 |             72 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/dm_enaQ_i_2_n_0                                                 | votechain1_i/data_mining_0/inst/clear                                                           |               18 |             92 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/sha256_top1/update_h1/h                                         | votechain1_i/data_mining_0/inst/sha256_top1/addr_timing_ctrl1/SR[0]                             |               66 |            512 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/sha256_top1/update_h1/h00                                       | votechain1_i/data_mining_0/inst/sha256_top1/update_h1/p_0_in_0                                  |               64 |            512 |
+|  clk_IBUF_BUFG                                | votechain1_i/data_mining_0/inst/sha256_top1/update_h1/hashQ_reg[7][0]                           | votechain1_i/data_mining_0/inst/clear                                                           |               64 |            514 |
++-----------------------------------------------+-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

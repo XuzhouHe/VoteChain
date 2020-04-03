@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x823083E4301D9CFF" bd:device="xc7z020clg484-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.2" bd:top="votechain1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>votechain1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>clk</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>votechain1_clk</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>ASSOCIATED_RESET</spirit:name>
+            <spirit:value>S_AXI_ARESETN_0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>RST.S_AXI_ARESETN_0</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>S_AXI_ARESETN_0</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="votechain1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>BTNU_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>BTND_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>BTNR_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>BTNL_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>BTNC_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>clk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>S_AXI_ARESETN_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>receiving_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>user_ID_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>system_onQ_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>LD_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>votechain1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>button_debounce_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="button_debounce" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">votechain1_button_debounce_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">button_debounce</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>BRAM_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="BRAM" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">votechain1_BRAM_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">BRAM</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>data_validation_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="data_validation" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">votechain1_data_validation_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">data_validation</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>data_mining_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="data_mining" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">votechain1_data_mining_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">data_mining</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>controller_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="controller" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">votechain1_controller_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">controller</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>button_debounce_0_votes</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="votes"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="vote"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BTNU_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BTNU_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="BTNU"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BTND_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BTND_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="BTND"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BTNR_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BTNR_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="BTNR"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BTNL_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BTNL_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="BTNL"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BTNC_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="BTNC_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="BTNC"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S_AXI_ACLK_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="S_AXI_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="S_AXI_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="S_AXI_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="S_AXI_ACLK"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>S_AXI_ARESETN_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="S_AXI_ARESETN_0"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="rst"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="S_AXI_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="S_AXI_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="S_AXI_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="S_AXI_ARESETN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_dv_done</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="dv_done"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="dv_done"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_config_dv_done</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="config_dv_done"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="config_dv_done"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BRAM_0_config_bram_done</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="config_bram_done"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="config_bram_done"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>receiving_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="receiving_0"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="receiving"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_bram_addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="bram_addr"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="controller_addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_bram_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="bram_data"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="controller_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_control_ena</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="control_ena"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="controller_ena"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_configQ</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="configQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="configQ"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="configQ"/>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="configQ"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_dv_ena</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="dv_enaQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dv_ena"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_bram_addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="bram_addrQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dv_addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_bram_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="bram_dataQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dv_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_enableDV_Q</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="enableDV_Q"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="enableDV_Q"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>user_ID_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="user_ID_0"/>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="user_ID"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_mining_0_dm_done</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="dm_done"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_done"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="dm_done"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>controller_0_enableDM_Q</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="enableDM_Q"/>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="enableDM_Q"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BRAM_0_dm_read_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_read_data"/>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="dm_read_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_mining_0_dm_read_addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="dm_read_addr"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_read_addr"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_mining_0_bram_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="bram_dataQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_data"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>system_onQ_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="system_onQ_0"/>
+        <spirit:internalPortReference spirit:componentRef="controller_0" spirit:portRef="system_onQ"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_getVoteQ</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="getVoteQ"/>
+        <spirit:internalPortReference spirit:componentRef="button_debounce_0" spirit:portRef="getVote"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_validation_0_LD</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_validation_0" spirit:portRef="LD"/>
+        <spirit:externalPortReference spirit:portRef="LD_0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_mining_0_dm_enaQ</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="dm_enaQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_ena"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>data_mining_0_bram_addrQ</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="data_mining_0" spirit:portRef="bram_addrQ"/>
+        <spirit:internalPortReference spirit:componentRef="BRAM_0" spirit:portRef="dm_addr"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

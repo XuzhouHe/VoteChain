@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="votechain_1_votechain1_0_0_synth_1" LaunchDir="H:/ESE498_Capstone/final_votechain/final_votechain.runs/votechain_1_votechain1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/sim/votechain_1.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_controller_0_0.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_BRAM_0_0.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_validation_0_0.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_button_debounce_0_0.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1_data_mining_0_0.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/controller.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/blk_mem_gen_1.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/BRAM.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/data_validation.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/button_debounce.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/addr_timing_ctrl.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/extend.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/k_rom.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/sha256_top.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/update_h.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/w_ram.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/data_mining.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ipshared/9d1c/sim/votechain1.v" \
+"../../../../final_votechain.ip_user_files/bd/votechain_1/ip/votechain_1_votechain1_0_0/sim/votechain_1_votechain1_0_0.v" \
+"../../../../final_votechain.srcs/sources_1/bd/votechain_1/hdl/votechain_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

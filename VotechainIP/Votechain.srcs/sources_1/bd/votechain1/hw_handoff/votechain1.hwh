@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 28 17:33:05 2019" VIVADOVERSION="2018.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zedboard:part0:1.0" DEVICE="7z020" NAME="votechain1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="BTNU_0" SIGIS="undef" SIGNAME="External_Ports_BTNU_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="BTNU"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTND_0" SIGIS="undef" SIGNAME="External_Ports_BTND_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="BTND"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNR_0" SIGIS="undef" SIGNAME="External_Ports_BTNR_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="BTNR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNL_0" SIGIS="undef" SIGNAME="External_Ports_BTNL_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="BTNL"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNC_0" SIGIS="undef" SIGNAME="External_Ports_BTNC_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="BTNC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="clk"/>
+        <CONNECTION INSTANCE="BRAM_0" PORT="S_AXI_ACLK"/>
+        <CONNECTION INSTANCE="data_validation_0" PORT="S_AXI_ACLK"/>
+        <CONNECTION INSTANCE="data_mining_0" PORT="S_AXI_ACLK"/>
+        <CONNECTION INSTANCE="controller_0" PORT="S_AXI_ACLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="S_AXI_ARESETN_0" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="button_debounce_0" PORT="rst"/>
+        <CONNECTION INSTANCE="BRAM_0" PORT="S_AXI_ARESETN"/>
+        <CONNECTION INSTANCE="data_validation_0" PORT="S_AXI_ARESETN"/>
+        <CONNECTION INSTANCE="data_mining_0" PORT="S_AXI_ARESETN"/>
+        <CONNECTION INSTANCE="controller_0" PORT="S_AXI_ARESETN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="receiving_0" SIGIS="undef" SIGNAME="External_Ports_receiving_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="receiving"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="user_ID_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_user_ID_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="data_validation_0" PORT="user_ID"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="system_onQ_0" SIGIS="undef" SIGNAME="External_Ports_system_onQ_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="controller_0" PORT="system_onQ"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="LD_0" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_LD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="data_validation_0" PORT="LD"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/BRAM_0" HWVERSION="1.0" INSTANCE="BRAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BRAM" VLNV="xilinx.com:module_ref:BRAM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="votechain1_BRAM_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_AXI_ARESETN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="configQ" SIGIS="undef" SIGNAME="controller_0_configQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="configQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="config_bram_done" SIGIS="undef" SIGNAME="BRAM_0_config_bram_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="config_bram_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dm_done" SIGIS="undef" SIGNAME="data_mining_0_dm_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="dm_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="controller_ena" SIGIS="undef" SIGNAME="controller_0_control_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="control_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="controller_addr" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_bram_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="bram_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="controller_data" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_bram_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="bram_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dv_ena" SIGIS="undef" SIGNAME="data_validation_0_dv_enaQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="dv_enaQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dv_addr" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_bram_addrQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="bram_addrQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dv_data" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_bram_dataQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="bram_dataQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dm_ena" SIGIS="undef" SIGNAME="data_mining_0_dm_enaQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="dm_enaQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dm_addr" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_bram_addrQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="bram_addrQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="dm_read_addr" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_dm_read_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="dm_read_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dm_data" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_bram_dataQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="bram_dataQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="dm_read_data" RIGHT="0" SIGIS="undef" SIGNAME="BRAM_0_dm_read_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="dm_read_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/button_debounce_0" HWVERSION="1.0" INSTANCE="button_debounce_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="button_debounce" VLNV="xilinx.com:module_ref:button_debounce:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="votechain1_button_debounce_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="BTNU" SIGIS="undef" SIGNAME="External_Ports_BTNU_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNU_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTND" SIGIS="undef" SIGNAME="External_Ports_BTND_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTND_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNR" SIGIS="undef" SIGNAME="External_Ports_BTNR_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNR_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNL" SIGIS="undef" SIGNAME="External_Ports_BTNL_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNL_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNC" SIGIS="undef" SIGNAME="External_Ports_BTNC_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNC_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_AXI_ARESETN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="getVote" SIGIS="undef" SIGNAME="data_validation_0_getVoteQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="getVoteQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="votes" RIGHT="0" SIGIS="undef" SIGNAME="button_debounce_0_votes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="vote"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/controller_0" HWVERSION="1.0" INSTANCE="controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="controller" VLNV="xilinx.com:module_ref:controller:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="6"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="CLK_PERIOD" VALUE="33.329999999999998"/>
+        <PARAMETER NAME="Component_Name" VALUE="votechain1_controller_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_AXI_ARESETN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="system_onQ" SIGIS="undef" SIGNAME="External_Ports_system_onQ_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="system_onQ_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="configQ" SIGIS="undef" SIGNAME="controller_0_configQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="configQ"/>
+            <CONNECTION INSTANCE="data_validation_0" PORT="configQ"/>
+            <CONNECTION INSTANCE="data_mining_0" PORT="configQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dv_done" SIGIS="undef" SIGNAME="data_validation_0_dv_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="dv_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="config_dv_done" SIGIS="undef" SIGNAME="data_validation_0_config_dv_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="config_dv_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="enableDV_Q" SIGIS="undef" SIGNAME="controller_0_enableDV_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_validation_0" PORT="enableDV_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dm_done" SIGIS="undef" SIGNAME="data_mining_0_dm_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="dm_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="enableDM_Q" SIGIS="undef" SIGNAME="controller_0_enableDM_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_mining_0" PORT="enableDM_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="config_bram_done" SIGIS="undef" SIGNAME="BRAM_0_config_bram_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="config_bram_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="receiving" SIGIS="undef" SIGNAME="External_Ports_receiving_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="receiving_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="control_ena" SIGIS="undef" SIGNAME="controller_0_control_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="controller_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="bram_data" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_bram_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="controller_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_addr" RIGHT="0" SIGIS="undef" SIGNAME="controller_0_bram_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="controller_addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_mining_0" HWVERSION="1.0" INSTANCE="data_mining_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_mining" VLNV="xilinx.com:module_ref:data_mining:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BW" VALUE="31"/>
+        <PARAMETER NAME="wAddr_BW" VALUE="5"/>
+        <PARAMETER NAME="nAddr_BW" VALUE="5"/>
+        <PARAMETER NAME="msgAddr_BW" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="votechain1_data_mining_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_AXI_ARESETN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="configQ" SIGIS="undef" SIGNAME="controller_0_configQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="configQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dm_done" SIGIS="undef" SIGNAME="data_mining_0_dm_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_done"/>
+            <CONNECTION INSTANCE="controller_0" PORT="dm_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enableDM_Q" SIGIS="undef" SIGNAME="controller_0_enableDM_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="enableDM_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dm_read_data" RIGHT="0" SIGIS="undef" SIGNAME="BRAM_0_dm_read_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_read_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dm_read_addr" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_dm_read_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_read_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dm_enaQ" SIGIS="undef" SIGNAME="data_mining_0_dm_enaQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_addrQ" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_bram_addrQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="bram_dataQ" RIGHT="0" SIGIS="undef" SIGNAME="data_mining_0_bram_dataQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dm_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/data_validation_0" HWVERSION="1.0" INSTANCE="data_validation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_validation" VLNV="xilinx.com:module_ref:data_validation:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="WAIT" VALUE="0"/>
+        <PARAMETER NAME="STOP" VALUE="1"/>
+        <PARAMETER NAME="COLLECT" VALUE="2"/>
+        <PARAMETER NAME="RESULT" VALUE="3"/>
+        <PARAMETER NAME="STORE" VALUE="4"/>
+        <PARAMETER NAME="CHECK" VALUE="5"/>
+        <PARAMETER NAME="CONF" VALUE="6"/>
+        <PARAMETER NAME="Component_Name" VALUE="votechain1_data_validation_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN" SIGIS="rst" SIGNAME="External_Ports_S_AXI_ARESETN_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S_AXI_ARESETN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="configQ" SIGIS="undef" SIGNAME="controller_0_configQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="configQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enableDV_Q" SIGIS="undef" SIGNAME="controller_0_enableDV_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="enableDV_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="vote" RIGHT="0" SIGIS="undef" SIGNAME="button_debounce_0_votes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="button_debounce_0" PORT="votes"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="getVoteQ" SIGIS="undef" SIGNAME="data_validation_0_getVoteQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="button_debounce_0" PORT="getVote"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dv_done" SIGIS="undef" SIGNAME="data_validation_0_dv_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="dv_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="config_dv_done" SIGIS="undef" SIGNAME="data_validation_0_config_dv_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="controller_0" PORT="config_dv_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dv_enaQ" SIGIS="undef" SIGNAME="data_validation_0_dv_enaQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dv_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="bram_dataQ" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_bram_dataQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dv_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_addrQ" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_bram_addrQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BRAM_0" PORT="dv_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="user_ID" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_user_ID_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="user_ID_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LD" RIGHT="0" SIGIS="undef" SIGNAME="data_validation_0_LD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LD_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

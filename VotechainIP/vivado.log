@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr 28 13:53:31 2019
+# Process ID: 32232
+# Current directory: C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35152 C:\Users\Dyon\Desktop\WUSTL\SPRING_2019\ESE_498_EE_Capstone\Vivado\VotechainIP\Votechain.xpr
+# Log file: C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/vivado.log
+# Journal file: C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 13:53:56 2019...

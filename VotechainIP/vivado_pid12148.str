@@ -1,0 +1,190 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12148
+License: Customer
+
+Current time: 	Fri Apr 19 09:04:40 CDT 2019
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 18 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	dbuiten
+User home directory: C:/Users/dbuiten
+User working directory: H:/ESE 498_Capstone/Votechain
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Apps/Xilinx/Vivado
+HDI_APPROOT: C:/Apps/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Apps/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Apps/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Apps/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	H:/ESE 498_Capstone/Votechain/vivado.log
+Vivado journal file location: 	H:/ESE 498_Capstone/Votechain/vivado.jou
+Engine tmp dir: 	H:/ESE 498_Capstone/Votechain/.Xil/Vivado-12148-URB215-12
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK10_DIR: C:\Program Files\Microsoft SDKs\Kinect\v1.8\
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27017@licensing02.seas.wustl.edu
+XILINX_DSP: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Apps/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Apps/Xilinx/Vivado/2018.2
+okFP_SDK: C:\Program Files\Opal Kelly\FrontPanelUSB\API
+
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 551 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 66 MB (+66898kb) [00:00:04]
+// [Engine Memory]: 483 MB (+355047kb) [00:00:04]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: H:\ESE 498_Capstone\Votechain\Votechain.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {H:/ESE 498_Capstone/Votechain/Votechain.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 549 MB (+43960kb) [00:00:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 590 MB. GUI used memory: 34 MB. Current time: 4/19/19 9:04:42 AM CDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 649 MB (+76281kb) [00:00:10]
+// Tcl Message: open_project {H:/ESE 498_Capstone/Votechain/Votechain.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: Votechain; location: H:/ESE 498_Capstone/Votechain; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 895.645 ; gain = 162.559 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+floatView(PAResourceOtoP.PAViews_CODE, "controller.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("controller.v", 312, 415); // ce (w, aG)
+selectCodeEditor("controller.v", 135, 301); // ce (w, aG)
+selectCodeEditor("controller.v", 135, 301, false, false, false, false, true); // ce (w, aG) - Double Click
+// [GUI Memory]: 71 MB (+1443kb) [00:00:32]
+selectCodeEditor("controller.v", 135, 316); // ce (w, aG)
+selectCodeEditor("controller.v", 135, 316, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 137, 299); // ce (w, aG)
+selectCodeEditor("controller.v", 137, 299, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 89, 367); // ce (w, aG)
+selectCodeEditor("controller.v", 89, 367, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 153, 472); // ce (w, aG)
+selectCodeEditor("controller.v", 153, 472, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "controller.v", 'c'); // ce (w, aG)
+// [GUI Memory]: 78 MB (+3210kb) [00:00:42]
+// Elapsed time: 15 seconds
+selectCodeEditor("controller.v", 342, 497); // ce (w, aG)
+selectCodeEditor("controller.v", 453, 430); // ce (w, aG)
+selectCodeEditor("controller.v", 474, 480); // ce (w, aG)
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 22 seconds
+selectCodeEditor("controller.v", 226, 205); // ce (w, aG)
+// Elapsed time: 14 seconds
+selectCodeEditor("controller.v", 105, 229); // ce (w, aG)
+selectCodeEditor("controller.v", 105, 229, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "controller.v", 'c'); // ce (w, aG)
+// [GUI Memory]: 82 MB (+942kb) [00:05:42]
+// Elapsed time: 492 seconds
+selectCodeEditor("controller.v", 357, 491); // ce (w, aG)
+// [GUI Memory]: 88 MB (+2150kb) [00:10:17]
+// Elapsed time: 13 seconds
+selectCodeEditor("controller.v", 20, 588); // ce (w, aG)
+typeControlKey((HResource) null, "controller.v", 'c'); // ce (w, aG)
+// [GUI Memory]: 93 MB (+26kb) [00:25:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 44 MB. Current time: 4/19/19 9:34:43 AM CDT
+// Elapsed time: 2007 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller (controller.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "controller.v*"); // aw (aE, aG)
+selectCodeEditor("controller.v", 516, 147); // ce (w, aG)
+selectCodeEditor("controller.v", 148, 259); // ce (w, aG)
+selectCodeEditor("controller.v", 148, 259, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 144, 321); // ce (w, aG)
+selectCodeEditor("controller.v", 144, 321, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 188, 316); // ce (w, aG)
+selectCodeEditor("controller.v", 29, 318); // ce (w, aG)
+selectCodeEditor("controller.v", 93, 374); // ce (w, aG)
+selectCodeEditor("controller.v", 453, 435); // ce (w, aG)
+selectCodeEditor("controller.v", 183, 468); // ce (w, aG)
+selectCodeEditor("controller.v", 214, 509); // ce (w, aG)
+selectCodeEditor("controller.v", 230, 438); // ce (w, aG)
+selectCodeEditor("controller.v", 30, 435); // ce (w, aG)
+// Elapsed time: 24 seconds
+selectCodeEditor("controller.v", 126, 688); // ce (w, aG)
+selectCodeEditor("controller.v", 126, 688, false, false, false, false, true); // ce (w, aG) - Double Click
+// [GUI Memory]: 98 MB (+394kb) [00:45:03]
+selectCodeEditor("controller.v", 14, 129); // ce (w, aG)
+selectCodeEditor("controller.v", 233, 383); // ce (w, aG)
+// Elapsed time: 11 seconds
+selectCodeEditor("controller.v", 212, 435); // ce (w, aG)
+selectCodeEditor("controller.v", 212, 435, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("controller.v", 191, 431); // ce (w, aG)
+selectCodeEditor("controller.v", 52, 333); // ce (w, aG)
+typeControlKey(null, null, 'z');
+selectCodeEditor("controller.v", 65, 166); // ce (w, aG)
+selectCodeEditor("controller.v", 52, 160); // ce (w, aG)
+// [GUI Memory]: 115 MB (+12265kb) [00:45:38]
+selectCodeEditor("controller.v", 217, 504); // ce (w, aG)
+selectCodeEditor("controller.v", 80, 535); // ce (w, aG)
+typeControlKey((HResource) null, "controller.v", 'c'); // ce (w, aG)
+// [Engine Memory]: 689 MB (+7140kb) [00:45:43]
+// k (ck): Text Changed: addNotify
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "controller.v*"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "controller.v*"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "controller.v*"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 131 MB (+10709kb) [00:45:48]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 724 MB. GUI used memory: 43 MB. Current time: 4/19/19 9:50:23 AM CDT
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 724 MB (+369kb) [00:45:50]

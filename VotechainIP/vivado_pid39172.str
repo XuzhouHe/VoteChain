@@ -1,0 +1,509 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 39172
+License: Customer
+
+Current time: 	Sun Apr 28 12:32:53 GMT-05:00 2019
+Time zone: 	GMT-05:00 (GMT-05:00)
+
+OS: Windows NT (unknown)
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 0 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	dbuiten
+User home directory: C:/Users/dbuiten
+User working directory: H:/Documents/Votechain/VotechainIP
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Apps/Xilinx/Vivado
+HDI_APPROOT: C:/Apps/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Apps/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Apps/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Apps/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	H:/Documents/Votechain/VotechainIP/vivado.log
+Vivado journal file location: 	H:/Documents/Votechain/VotechainIP/vivado.jou
+Engine tmp dir: 	H:/Documents/Votechain/VotechainIP/.Xil/Vivado-39172-RDSH03-FL18
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK10_DIR: C:\Program Files\Microsoft SDKs\Kinect\v1.8\
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27017@licensing02.seas.wustl.edu
+XILINX_DSP: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Apps/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Apps/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 569 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 64 MB (+64870kb) [00:00:06]
+// [Engine Memory]: 490 MB (+362281kb) [00:00:06]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: H:\Documents\Votechain\VotechainIP\Votechain.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project H:/Documents/Votechain/VotechainIP/Votechain.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// [Engine Memory]: 569 MB (+56664kb) [00:00:09]
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1075ms to process. Increasing delay to 4000 ms.
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 569 MB. GUI used memory: 33 MB. Current time: 4/28/19 12:32:55 PM GMT-05:00
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 678 MB (+84613kb) [00:00:16]
+// Tcl Message: open_project H:/Documents/Votechain/VotechainIP/Votechain.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/ESE498_Capstone/votechain_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/Documents/Votechain/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: Votechain; location: H:/Documents/Votechain/VotechainIP; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 918.359 ; gain = 179.305 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 68 MB (+435kb) [00:00:20]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1143 ms. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 71 MB (+103kb) [00:01:19]
+// Elapsed time: 105 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+// [GUI Memory]: 81 MB (+6716kb) [00:02:08]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // M (C) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // M (C)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // M (C)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "h:/Documents/Votechain/ip_repo", 3); // cn (O, C)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_REFRESH_ALL, "Refresh All"); // a (C)
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 96 MB (+11520kb) [00:02:17]
+// Tcl Message: update_ip_catalog -rebuild 
+// bx (ck):  Refresh All IP Repositories : addNotify
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/ESE498_Capstone/votechain_ip'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/Documents/Votechain/ip_repo'. 
+// [GUI Memory]: 105 MB (+3775kb) [00:02:18]
+// [Engine Memory]: 716 MB (+4212kb) [00:02:18]
+dismissDialog("Refresh All IP Repositories"); // bx (ck)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "h:/ESE498_Capstone/votechain_ip", 0); // cn (O, C)
+// HMemoryUtils.trashcanNow. Engine heap size: 730 MB. GUI used memory: 58 MB. Current time: 4/28/19 12:35:05 PM GMT-05:00
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// Tcl Command: 'config_webtalk -user on'
+// bx (ck):  Change Settings : addNotify
+// Tcl Message: config_webtalk -user on 
+dismissDialog("Change Settings"); // bx (ck)
+dismissDialog("Settings"); // C (ck)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// [Engine Memory]: 755 MB (+3301kb) [00:02:31]
+// Tcl Message: open_bd_design {H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd} 
+// Tcl Message: Adding cell -- xilinx.com:module_ref:BRAM:1.0 - BRAM_0 Adding cell -- xilinx.com:module_ref:controller:1.0 - controller_0 Adding cell -- xilinx.com:module_ref:data_validation:1.0 - data_validation_0 Adding cell -- xilinx.com:module_ref:button_debounce:1.0 - button_debounce_0 Adding cell -- xilinx.com:module_ref:data_mining:1.0 - data_mining_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Successfully read diagram <votechain1> from BD file <H:/Documents/Votechain/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/votechain1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 826 MB. GUI used memory: 59 MB. Current time: 4/28/19 12:35:20 PM GMT-05:00
+// [Engine Memory]: 826 MB (+35358kb) [00:02:36]
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1012.641 ; gain = 85.215 
+// 'bA' command handler elapsed time: 8 seconds
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /user_ID_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNL_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNL_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNR_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNR_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_configQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // B (f, ck)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "vote"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "TMR Voter", 0, "TMR Voter", 0, false); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "votechain1_v1_0", 1, "votechain1_v1_0", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "votechain1_v1_0", 1); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "votechain1_v1_0", 1, "votechain1_v1_0", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// bx (ck):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv wustl.edu:user:votechain1:1.0 votechain1_0 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 195, 58, 771, 406, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS, "Make External"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_cells votechain1_0] 
+// Tcl Message: make_bd_intf_pins_external  [get_bd_cells votechain1_0] 
+// Tcl Message: INFO: [BD 5-409] No interface pins to be made external for /votechain1_0 
+// Tcl Message: endgroup 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /button_debounce_0_votes 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /data_validation_0_getVoteQ 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /controller_0_enableDV_Q 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BRAM_0_config_bram_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BRAM_0_config_bram_done 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /votechain1_0_LD_0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNC_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTND_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTND_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNL_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /BTNL_0_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /receiving_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /system_onQ_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ACLK_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /S_AXI_ARESETN_0_1 
+// Elapsed time: 64 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 239, 60, 771, 406, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets BTND_0_0_1] [get_bd_nets BTNL_0_0_1] [get_bd_nets BTNR_0_0_1] [get_bd_nets BTNU_0_0_1] [get_bd_nets BTNC_0_0_1] [get_bd_nets votechain1_0_LD_0] [get_bd_nets S_AXI_ARESETN_0_0_1] [get_bd_nets clk_0_1] [get_bd_nets receiving_0_0_1] [get_bd_nets system_onQ_0_0_1] [get_bd_nets user_ID_0_0_1] [get_bd_cells votechain1_0] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_nets BTND_0_0_1] [get_bd_nets BTNL_0_0_1] [get_bd_nets BTNR_0_0_1] [get_bd_nets BTNU_0_0_1] [get_bd_nets BTNC_0_0_1] [get_bd_nets votechain1_0_LD_0] [get_bd_nets S_AXI_ARESETN_0_0_1] [get_bd_nets clk_0_1] [get_bd_nets receiving_0_0_1] [get_bd_nets system_onQ_0_0_1] [get_bd_nets user_ID_0_0_1] [get_bd_cells votechain1_0]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_cells votechain1_0]' INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_cells votechain1_0]' INFO: [Common 17-17] undo 'startgroup' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'endgroup' INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv wustl.edu:user:votechain1:1.0 votechain1_0' INFO: [Common 17-17] undo 'startgroup' 
+// [Engine Memory]: 868 MB (+297kb) [00:04:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 872 MB. GUI used memory: 63 MB. Current time: 4/28/19 12:42:21 PM GMT-05:00

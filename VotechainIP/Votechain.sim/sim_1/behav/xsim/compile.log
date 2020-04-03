@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/data_validation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_validation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/addr_timing_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_timing_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/k_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module k_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/sha256_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sha256_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/update_h.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module update_h
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/w_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module w_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/new/data_mining.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_mining
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_controller_0_0/sim/votechain1_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_BRAM_0_0/sim/votechain1_BRAM_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_BRAM_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_validation_0_0/sim/votechain1_data_validation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_validation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_button_debounce_0_0/sim/votechain1_button_debounce_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_button_debounce_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_mining_0_0/sim/votechain1_data_mining_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_data_mining_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.ip_user_files/bd/votechain1/sim/votechain1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sources_1/bd/votechain1/hdl/votechain1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dyon/Desktop/WUSTL/SPRING_2019/ESE_498_EE_Capstone/Vivado/VotechainIP/Votechain.srcs/sim_1/new/votechain_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module votechain_tb

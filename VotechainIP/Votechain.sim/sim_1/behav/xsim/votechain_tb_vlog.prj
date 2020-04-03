@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Votechain.srcs/sources_1/new/controller.v" \
+"../../../../Votechain.srcs/sources_1/new/blk_mem_gen_1.v" \
+"../../../../Votechain.srcs/sources_1/new/BRAM.v" \
+"../../../../Votechain.srcs/sources_1/new/data_validation.v" \
+"../../../../Votechain.srcs/sources_1/new/button_debounce.v" \
+"../../../../Votechain.srcs/sources_1/new/addr_timing_ctrl.v" \
+"../../../../Votechain.srcs/sources_1/new/extend.v" \
+"../../../../Votechain.srcs/sources_1/new/k_rom.v" \
+"../../../../Votechain.srcs/sources_1/new/sha256_top.v" \
+"../../../../Votechain.srcs/sources_1/new/update_h.v" \
+"../../../../Votechain.srcs/sources_1/new/w_ram.v" \
+"../../../../Votechain.srcs/sources_1/new/data_mining.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/ip/votechain1_controller_0_0/sim/votechain1_controller_0_0.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/ip/votechain1_BRAM_0_0/sim/votechain1_BRAM_0_0.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_validation_0_0/sim/votechain1_data_validation_0_0.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/ip/votechain1_button_debounce_0_0/sim/votechain1_button_debounce_0_0.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/ip/votechain1_data_mining_0_0/sim/votechain1_data_mining_0_0.v" \
+"../../../../Votechain.ip_user_files/bd/votechain1/sim/votechain1.v" \
+"../../../../Votechain.srcs/sources_1/bd/votechain1/hdl/votechain1_wrapper.v" \
+"../../../../Votechain.srcs/sim_1/new/votechain_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

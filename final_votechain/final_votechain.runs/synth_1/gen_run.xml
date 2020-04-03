@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1556490834">
+  <File Type="PA-TCL" Name="votechain_1_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="votechain_1_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="votechain_1_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="votechain_1_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="votechain_1_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="votechain_1_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="votechain_1_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="votechain_1_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="votechain_1_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/votechain_1/votechain_1.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/votechain_1/hdl/votechain_1_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="votechain_1_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs_1/zedboard_constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Votechain/Votechain.srcs/constrs_1/zedboard_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1556391553"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

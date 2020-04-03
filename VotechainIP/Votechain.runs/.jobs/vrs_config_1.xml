@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="currt_block_synth_1" LaunchDir="H:/ESE 498_Capstone/Votechain/Votechain.runs/currt_block_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

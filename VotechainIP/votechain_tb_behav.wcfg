@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="votechain_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="votechain_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="981311904fs"></ZoomStartTime>
+      <ZoomEndTime time="1003737620fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="203"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/votechain_tb/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/votechain_tb/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="group676" type="group">
+      <obj_property name="label">Testbench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/votechain_tb/receiving" type="logic">
+         <obj_property name="ElementShortName">receiving</obj_property>
+         <obj_property name="ObjectShortName">receiving</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/BTNU" type="logic">
+         <obj_property name="ElementShortName">BTNU</obj_property>
+         <obj_property name="ObjectShortName">BTNU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/BTND" type="logic">
+         <obj_property name="ElementShortName">BTND</obj_property>
+         <obj_property name="ObjectShortName">BTND</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/BTNR" type="logic">
+         <obj_property name="ElementShortName">BTNR</obj_property>
+         <obj_property name="ObjectShortName">BTNR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/BTNL" type="logic">
+         <obj_property name="ElementShortName">BTNL</obj_property>
+         <obj_property name="ObjectShortName">BTNL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/BTNC" type="logic">
+         <obj_property name="ElementShortName">BTNC</obj_property>
+         <obj_property name="ObjectShortName">BTNC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/user_ID" type="array">
+         <obj_property name="ElementShortName">user_ID[7:0]</obj_property>
+         <obj_property name="ObjectShortName">user_ID[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/system_onQ" type="logic">
+         <obj_property name="ElementShortName">system_onQ</obj_property>
+         <obj_property name="ObjectShortName">system_onQ</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group677" type="group">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/system_onQ" type="logic">
+         <obj_property name="ElementShortName">system_onQ</obj_property>
+         <obj_property name="ObjectShortName">system_onQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/dv_done" type="logic">
+         <obj_property name="ElementShortName">dv_done</obj_property>
+         <obj_property name="ObjectShortName">dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/config_dv_done" type="logic">
+         <obj_property name="ElementShortName">config_dv_done</obj_property>
+         <obj_property name="ObjectShortName">config_dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/enableDV_Q" type="logic">
+         <obj_property name="ElementShortName">enableDV_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDV_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/dm_done" type="logic">
+         <obj_property name="ElementShortName">dm_done</obj_property>
+         <obj_property name="ObjectShortName">dm_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/enableDM_Q" type="logic">
+         <obj_property name="ElementShortName">enableDM_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDM_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/config_bram_done" type="logic">
+         <obj_property name="ElementShortName">config_bram_done</obj_property>
+         <obj_property name="ObjectShortName">config_bram_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/receiving" type="logic">
+         <obj_property name="ElementShortName">receiving</obj_property>
+         <obj_property name="ObjectShortName">receiving</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/control_ena" type="logic">
+         <obj_property name="ElementShortName">control_ena</obj_property>
+         <obj_property name="ObjectShortName">control_ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/bram_addr" type="array">
+         <obj_property name="ElementShortName">bram_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/controller_0/bram_data" type="array">
+         <obj_property name="ElementShortName">bram_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group678" type="group">
+      <obj_property name="label">Data Validation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/enableDV_Q" type="logic">
+         <obj_property name="ElementShortName">enableDV_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDV_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/vote" type="array">
+         <obj_property name="ElementShortName">vote[4:0]</obj_property>
+         <obj_property name="ObjectShortName">vote[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/getVoteD" type="logic">
+         <obj_property name="ElementShortName">getVoteD</obj_property>
+         <obj_property name="ObjectShortName">getVoteD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/getVoteQ" type="logic">
+         <obj_property name="ElementShortName">getVoteQ</obj_property>
+         <obj_property name="ObjectShortName">getVoteQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/dv_done" type="logic">
+         <obj_property name="ElementShortName">dv_done</obj_property>
+         <obj_property name="ObjectShortName">dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/config_dv_done" type="logic">
+         <obj_property name="ElementShortName">config_dv_done</obj_property>
+         <obj_property name="ObjectShortName">config_dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/dv_enaQ" type="logic">
+         <obj_property name="ElementShortName">dv_enaQ</obj_property>
+         <obj_property name="ObjectShortName">dv_enaQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/bram_dataQ" type="array">
+         <obj_property name="ElementShortName">bram_dataQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_dataQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/bram_addrQ" type="array">
+         <obj_property name="ElementShortName">bram_addrQ[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addrQ[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/user_ID" type="array">
+         <obj_property name="ElementShortName">user_ID[7:0]</obj_property>
+         <obj_property name="ObjectShortName">user_ID[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/LD" type="array">
+         <obj_property name="ElementShortName">LD[7:0]</obj_property>
+         <obj_property name="ObjectShortName">LD[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group691" type="group">
+      <obj_property name="label">Data Mining</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/dm_done" type="logic">
+         <obj_property name="ElementShortName">dm_done</obj_property>
+         <obj_property name="ObjectShortName">dm_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/enableDM_Q" type="logic">
+         <obj_property name="ElementShortName">enableDM_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDM_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/dm_read_data" type="array">
+         <obj_property name="ElementShortName">dm_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/dm_read_addr" type="array">
+         <obj_property name="ElementShortName">dm_read_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_addr[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group702" type="group">
+      <obj_property name="label">BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/config_bram_done" type="logic">
+         <obj_property name="ElementShortName">config_bram_done</obj_property>
+         <obj_property name="ObjectShortName">config_bram_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_done" type="logic">
+         <obj_property name="ElementShortName">dm_done</obj_property>
+         <obj_property name="ObjectShortName">dm_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/controller_ena" type="logic">
+         <obj_property name="ElementShortName">controller_ena</obj_property>
+         <obj_property name="ObjectShortName">controller_ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/controller_addr" type="array">
+         <obj_property name="ElementShortName">controller_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">controller_addr[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/controller_data" type="array">
+         <obj_property name="ElementShortName">controller_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">controller_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dv_ena" type="logic">
+         <obj_property name="ElementShortName">dv_ena</obj_property>
+         <obj_property name="ObjectShortName">dv_ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dv_addr" type="array">
+         <obj_property name="ElementShortName">dv_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dv_addr[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dv_data" type="array">
+         <obj_property name="ElementShortName">dv_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dv_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_ena" type="logic">
+         <obj_property name="ElementShortName">dm_ena</obj_property>
+         <obj_property name="ObjectShortName">dm_ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_addr" type="array">
+         <obj_property name="ElementShortName">dm_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_addr[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_data" type="array">
+         <obj_property name="ElementShortName">dm_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_read_addr" type="array">
+         <obj_property name="ElementShortName">dm_read_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/dm_read_data" type="array">
+         <obj_property name="ElementShortName">dm_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group654" type="group">
+         <obj_property name="label">SRAM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/i_clk" type="logic">
+            <obj_property name="ElementShortName">i_clk</obj_property>
+            <obj_property name="ObjectShortName">i_clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/i_write" type="logic">
+            <obj_property name="ElementShortName">i_write</obj_property>
+            <obj_property name="ObjectShortName">i_write</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/we_addr" type="array">
+            <obj_property name="ElementShortName">we_addr[15:0]</obj_property>
+            <obj_property name="ObjectShortName">we_addr[15:0]</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/we_data" type="array">
+            <obj_property name="ElementShortName">we_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">we_data[31:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/rd_addr" type="array">
+            <obj_property name="ElementShortName">rd_addr[15:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_addr[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/rd_data" type="array">
+            <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/BRAM_0/inst/blockchain_memory/addr_R_reg" type="array">
+            <obj_property name="ElementShortName">addr_R_reg[15:0]</obj_property>
+            <obj_property name="ObjectShortName">addr_R_reg[15:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group719" type="group">
+      <obj_property name="label">Buttons</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/inst/getVote" type="logic">
+         <obj_property name="ElementShortName">getVote</obj_property>
+         <obj_property name="ObjectShortName">getVote</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/BTNU" type="logic">
+         <obj_property name="ElementShortName">BTNU</obj_property>
+         <obj_property name="ObjectShortName">BTNU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/BTND" type="logic">
+         <obj_property name="ElementShortName">BTND</obj_property>
+         <obj_property name="ObjectShortName">BTND</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/BTNR" type="logic">
+         <obj_property name="ElementShortName">BTNR</obj_property>
+         <obj_property name="ObjectShortName">BTNR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/BTNL" type="logic">
+         <obj_property name="ElementShortName">BTNL</obj_property>
+         <obj_property name="ObjectShortName">BTNL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/BTNC" type="logic">
+         <obj_property name="ElementShortName">BTNC</obj_property>
+         <obj_property name="ObjectShortName">BTNC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/votes" type="array">
+         <obj_property name="ElementShortName">votes[4:0]</obj_property>
+         <obj_property name="ObjectShortName">votes[4:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/button_debounce_0/inst/vote" type="array">
+         <obj_property name="ElementShortName">vote[4:0]</obj_property>
+         <obj_property name="ObjectShortName">vote[4:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group127" type="group">
+      <obj_property name="label">DM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/dm_done" type="logic">
+         <obj_property name="ElementShortName">dm_done</obj_property>
+         <obj_property name="ObjectShortName">dm_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/enableDM_Q" type="logic">
+         <obj_property name="ElementShortName">enableDM_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDM_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/dm_read_data" type="array">
+         <obj_property name="ElementShortName">dm_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/dm_read_addr" type="array">
+         <obj_property name="ElementShortName">dm_read_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dm_read_addr[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/enSHA_D" type="logic">
+         <obj_property name="ElementShortName">enSHA_D</obj_property>
+         <obj_property name="ObjectShortName">enSHA_D</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/enSHA_Q" type="logic">
+         <obj_property name="ElementShortName">enSHA_Q</obj_property>
+         <obj_property name="ObjectShortName">enSHA_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/extend_w_out_index" type="array">
+         <obj_property name="ElementShortName">extend_w_out_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">extend_w_out_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/extend_w_out" type="array">
+         <obj_property name="ElementShortName">extend_w_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">extend_w_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/update_h_w_finish" type="logic">
+         <obj_property name="ElementShortName">update_h_w_finish</obj_property>
+         <obj_property name="ObjectShortName">update_h_w_finish</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/update_h_w_finish_2" type="logic">
+         <obj_property name="ElementShortName">update_h_w_finish_2</obj_property>
+         <obj_property name="ObjectShortName">update_h_w_finish_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/update_h_h_index_out" type="array">
+         <obj_property name="ElementShortName">update_h_h_index_out[5:0]</obj_property>
+         <obj_property name="ObjectShortName">update_h_h_index_out[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h0" type="array">
+         <obj_property name="ElementShortName">h0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h1" type="array">
+         <obj_property name="ElementShortName">h1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h2" type="array">
+         <obj_property name="ElementShortName">h2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h3" type="array">
+         <obj_property name="ElementShortName">h3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h4" type="array">
+         <obj_property name="ElementShortName">h4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h5" type="array">
+         <obj_property name="ElementShortName">h5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h5[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h6" type="array">
+         <obj_property name="ElementShortName">h6[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h6[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/h7" type="array">
+         <obj_property name="ElementShortName">h7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">h7[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/enNonceD" type="logic">
+         <obj_property name="ElementShortName">enNonceD</obj_property>
+         <obj_property name="ObjectShortName">enNonceD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/seed_data_D" type="array">
+         <obj_property name="ElementShortName">seed_data_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">seed_data_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/nonce_Data_D" type="array">
+         <obj_property name="ElementShortName">nonce_Data_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">nonce_Data_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/r_LFSR_D" type="array">
+         <obj_property name="ElementShortName">r_LFSR_D[32:1]</obj_property>
+         <obj_property name="ObjectShortName">r_LFSR_D[32:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/enNonceQ" type="logic">
+         <obj_property name="ElementShortName">enNonceQ</obj_property>
+         <obj_property name="ObjectShortName">enNonceQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/seed_data_Q" type="array">
+         <obj_property name="ElementShortName">seed_data_Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">seed_data_Q[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/nonce_Data_Q" type="array">
+         <obj_property name="ElementShortName">nonce_Data_Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">nonce_Data_Q[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/r_LFSR_Q" type="array">
+         <obj_property name="ElementShortName">r_LFSR_Q[32:1]</obj_property>
+         <obj_property name="ObjectShortName">r_LFSR_Q[32:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/chunkCountD" type="array">
+         <obj_property name="ElementShortName">chunkCountD[3:0]</obj_property>
+         <obj_property name="ObjectShortName">chunkCountD[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/chunkCountQ" type="array">
+         <obj_property name="ElementShortName">chunkCountQ[3:0]</obj_property>
+         <obj_property name="ObjectShortName">chunkCountQ[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/hashD" type="array">
+         <obj_property name="ElementShortName">hashD[0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">hashD[0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/hashQ" type="array">
+         <obj_property name="ElementShortName">hashQ[0:7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">hashQ[0:7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/hashCheck_D" type="array">
+         <obj_property name="ElementShortName">hashCheck_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hashCheck_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/hashCheck_Q" type="array">
+         <obj_property name="ElementShortName">hashCheck_Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hashCheck_Q[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/current_addr_D" type="array">
+         <obj_property name="ElementShortName">current_addr_D[15:0]</obj_property>
+         <obj_property name="ObjectShortName">current_addr_D[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/current_addr_Q" type="array">
+         <obj_property name="ElementShortName">current_addr_Q[15:0]</obj_property>
+         <obj_property name="ObjectShortName">current_addr_Q[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/i_D" type="array">
+         <obj_property name="ElementShortName">i_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/i_Q" type="array">
+         <obj_property name="ElementShortName">i_Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_Q[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/k" type="array">
+         <obj_property name="ElementShortName">k[31:0]</obj_property>
+         <obj_property name="ObjectShortName">k[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/msg_ram_read_addr" type="array">
+         <obj_property name="ElementShortName">msg_ram_read_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">msg_ram_read_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/msg_ram_data_out" type="array">
+         <obj_property name="ElementShortName">msg_ram_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">msg_ram_data_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/nextState" type="array">
+         <obj_property name="ElementShortName">nextState[3:0]</obj_property>
+         <obj_property name="ObjectShortName">nextState[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_mining_0/inst/currentState" type="array">
+         <obj_property name="ElementShortName">currentState[3:0]</obj_property>
+         <obj_property name="ObjectShortName">currentState[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group382" type="group">
+      <obj_property name="label">DV</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/configQ" type="logic">
+         <obj_property name="ElementShortName">configQ</obj_property>
+         <obj_property name="ObjectShortName">configQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/enableDV_Q" type="logic">
+         <obj_property name="ElementShortName">enableDV_Q</obj_property>
+         <obj_property name="ObjectShortName">enableDV_Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/vote" type="array">
+         <obj_property name="ElementShortName">vote[4:0]</obj_property>
+         <obj_property name="ObjectShortName">vote[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/getVoteD" type="logic">
+         <obj_property name="ElementShortName">getVoteD</obj_property>
+         <obj_property name="ObjectShortName">getVoteD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/getVoteQ" type="logic">
+         <obj_property name="ElementShortName">getVoteQ</obj_property>
+         <obj_property name="ObjectShortName">getVoteQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/dv_done" type="logic">
+         <obj_property name="ElementShortName">dv_done</obj_property>
+         <obj_property name="ObjectShortName">dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/config_dv_done" type="logic">
+         <obj_property name="ElementShortName">config_dv_done</obj_property>
+         <obj_property name="ObjectShortName">config_dv_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/dv_enaQ" type="logic">
+         <obj_property name="ElementShortName">dv_enaQ</obj_property>
+         <obj_property name="ObjectShortName">dv_enaQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/bram_dataQ" type="array">
+         <obj_property name="ElementShortName">bram_dataQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_dataQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/bram_addrQ" type="array">
+         <obj_property name="ElementShortName">bram_addrQ[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addrQ[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/user_ID" type="array">
+         <obj_property name="ElementShortName">user_ID[7:0]</obj_property>
+         <obj_property name="ObjectShortName">user_ID[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/LD" type="array">
+         <obj_property name="ElementShortName">LD[7:0]</obj_property>
+         <obj_property name="ObjectShortName">LD[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/nextState" type="array">
+         <obj_property name="ElementShortName">nextState[3:0]</obj_property>
+         <obj_property name="ObjectShortName">nextState[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/currentState" type="array">
+         <obj_property name="ElementShortName">currentState[3:0]</obj_property>
+         <obj_property name="ObjectShortName">currentState[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/numDataD" type="array">
+         <obj_property name="ElementShortName">numDataD[6:0]</obj_property>
+         <obj_property name="ObjectShortName">numDataD[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/numDataQ" type="array">
+         <obj_property name="ElementShortName">numDataQ[6:0]</obj_property>
+         <obj_property name="ObjectShortName">numDataQ[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/numResultD" type="array">
+         <obj_property name="ElementShortName">numResultD[6:0]</obj_property>
+         <obj_property name="ObjectShortName">numResultD[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/numResultQ" type="array">
+         <obj_property name="ElementShortName">numResultQ[6:0]</obj_property>
+         <obj_property name="ObjectShortName">numResultQ[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/timeoutD" type="logic">
+         <obj_property name="ElementShortName">timeoutD</obj_property>
+         <obj_property name="ObjectShortName">timeoutD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/timeoutQ" type="logic">
+         <obj_property name="ElementShortName">timeoutQ</obj_property>
+         <obj_property name="ObjectShortName">timeoutQ</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/timeoutCount_D" type="array">
+         <obj_property name="ElementShortName">timeoutCount_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">timeoutCount_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/timeoutCount_Q" type="array">
+         <obj_property name="ElementShortName">timeoutCount_Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">timeoutCount_Q[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/dv_enaD" type="logic">
+         <obj_property name="ElementShortName">dv_enaD</obj_property>
+         <obj_property name="ObjectShortName">dv_enaD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/bram_dataD" type="array">
+         <obj_property name="ElementShortName">bram_dataD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_dataD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/bram_addrD" type="array">
+         <obj_property name="ElementShortName">bram_addrD[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addrD[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/current_voteD" type="array">
+         <obj_property name="ElementShortName">current_voteD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">current_voteD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/current_voteQ" type="array">
+         <obj_property name="ElementShortName">current_voteQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">current_voteQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/current_addrD" type="array">
+         <obj_property name="ElementShortName">current_addrD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">current_addrD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/current_addrQ" type="array">
+         <obj_property name="ElementShortName">current_addrQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">current_addrQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/vote_addrD" type="array">
+         <obj_property name="ElementShortName">vote_addrD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vote_addrD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/vote_addrQ" type="array">
+         <obj_property name="ElementShortName">vote_addrQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vote_addrQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/resultD" type="array">
+         <obj_property name="ElementShortName">resultD[4:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">resultD[4:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/resultQ" type="array">
+         <obj_property name="ElementShortName">resultQ[4:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">resultQ[4:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/ID_indexD" type="array">
+         <obj_property name="ElementShortName">ID_indexD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_indexD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/ID_indexQ" type="array">
+         <obj_property name="ElementShortName">ID_indexQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_indexQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/ID_arrayD" type="array">
+         <obj_property name="ElementShortName">ID_arrayD[79:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_arrayD[79:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/ID_arrayQ" type="array">
+         <obj_property name="ElementShortName">ID_arrayQ[79:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_arrayQ[79:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/iD" type="array">
+         <obj_property name="ElementShortName">iD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">iD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/iQ" type="array">
+         <obj_property name="ElementShortName">iQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">iQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/ii" type="array">
+         <obj_property name="ElementShortName">ii[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ii[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/k" type="array">
+         <obj_property name="ElementShortName">k[31:0]</obj_property>
+         <obj_property name="ObjectShortName">k[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/votechain_tb/my_votechain/votechain1_i/data_validation_0/inst/kk" type="array">
+         <obj_property name="ElementShortName">kk[31:0]</obj_property>
+         <obj_property name="ObjectShortName">kk[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

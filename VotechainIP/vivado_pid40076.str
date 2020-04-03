@@ -1,0 +1,724 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 40076
+License: Customer
+
+Current time: 	Thu Apr 18 00:36:29 GMT-05:00 2019
+Time zone: 	GMT-05:00 (GMT-05:00)
+
+OS: Windows NT (unknown)
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 0 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Apps/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	dbuiten
+User home directory: C:/Users/dbuiten
+User working directory: H:/ESE 498_Capstone/Votechain
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Apps/Xilinx/Vivado
+HDI_APPROOT: C:/Apps/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Apps/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Apps/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/dbuiten/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Apps/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	H:/ESE 498_Capstone/Votechain/vivado.log
+Vivado journal file location: 	H:/ESE 498_Capstone/Votechain/vivado.jou
+Engine tmp dir: 	H:/ESE 498_Capstone/Votechain/.Xil/Vivado-40076-RDSH01-FL18
+
+Xilinx Environment Variables
+----------------------------
+KINECTSDK10_DIR: C:\Program Files\Microsoft SDKs\Kinect\v1.8\
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27017@licensing02.seas.wustl.edu
+XILINX_DSP: C:/Apps/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Apps/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Apps/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Apps/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	146 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 565 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 59 MB (+59769kb) [00:00:07]
+// [Engine Memory]: 494 MB (+366696kb) [00:00:07]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: H:\ESE 498_Capstone\Votechain\Votechain.xpr. Version: Vivado v2018.2 
+// Tcl Message: open_project {H:/ESE 498_Capstone/Votechain/Votechain.xpr} 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 66 MB (+3901kb) [00:00:09]
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1083ms to process. Increasing delay to 4000 ms.
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 565 MB. GUI used memory: 34 MB. Current time: 4/18/19 12:36:31 AM GMT-05:00
+// [Engine Memory]: 565 MB (+47817kb) [00:00:14]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 666 MB (+76578kb) [00:00:17]
+// Tcl Message: open_project {H:/ESE 498_Capstone/Votechain/Votechain.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: Votechain; location: H:/ESE 498_Capstone/Votechain; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 853.680 ; gain = 163.781 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 81 MB (+11969kb) [00:00:23]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (BRAM.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v)]", 2, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectCodeEditor("BRAM.v", 68, 185); // ce (w, ck)
+selectCodeEditor("BRAM.v", 175, 209); // ce (w, ck)
+// [GUI Memory]: 86 MB (+687kb) [00:01:00]
+// [GUI Memory]: 90 MB (+599kb) [00:03:40]
+// Elapsed time: 187 seconds
+selectCodeEditor("BRAM.v", 593, 135); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("BRAM.v", 438, 157); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v), blockchain_memory : sram (blk_mem_gen_1.v)]", 3, false); // B (D, ck)
+// [GUI Memory]: 97 MB (+2546kb) [00:04:36]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v), blockchain_memory : sram (blk_mem_gen_1.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [Engine Memory]: 702 MB (+2762kb) [00:04:37]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 1); // k (j, ck)
+// Elapsed time: 131 seconds
+selectCodeEditor("BRAM.v", 184, 235); // ce (w, ck)
+selectCodeEditor("BRAM.v", 277, 284); // ce (w, ck)
+selectCodeEditor("BRAM.v", 277, 284, false, false, false, false, true); // ce (w, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 714 MB. GUI used memory: 42 MB. Current time: 4/18/19 12:43:21 AM GMT-05:00
+// Elapsed time: 18 seconds
+selectCodeEditor("BRAM.v", 287, 299); // ce (w, ck)
+selectCodeEditor("BRAM.v", 198, 194); // ce (w, ck)
+// Elapsed time: 64 seconds
+selectCodeEditor("BRAM.v", 347, 36); // ce (w, ck)
+selectCodeEditor("BRAM.v", 319, 28); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("BRAM.v", 604, 154); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("BRAM.v", 59, 283); // ce (w, ck)
+selectCodeEditor("BRAM.v", 110, 288); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("BRAM.v", 269, 183); // ce (w, ck)
+selectCodeEditor("BRAM.v", 269, 183); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 734 MB. GUI used memory: 42 MB. Current time: 4/18/19 12:47:16 AM GMT-05:00
+// Elapsed time: 31 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (ck): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 11 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "memory_test"); // X (Q, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (ak, f)
+setFolderChooser("H:/ESE 498_Capstone/memory test");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "BRAM"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, f)
+// F (f): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sram"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+// [GUI Memory]: 108 MB (+6403kb) [00:11:56]
+// [Engine Memory]: 752 MB (+15713kb) [00:11:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 758 MB. GUI used memory: 56 MB. Current time: 4/18/19 12:48:21 AM GMT-05:00
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zed"); // OverlayTextField (G, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; xc7z020clg484-1 ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "Zedboard", 0); // d (O, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; xc7z020clg484-1 ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "Zedboard", 0, false, false, false, false, true); // d (O, f) - Double Click
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bx (f):  Create Project : addNotify
+selectButton("PAResourceItoN.NewProjectWizard_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project memory_test {H:/ESE 498_Capstone/memory test/memory_test} -part xc7z020clg484-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Apps/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 799 MB (+9970kb) [00:12:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 799 MB. GUI used memory: 67 MB. Current time: 4/18/19 12:48:36 AM GMT-05:00
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 900.676 ; gain = 32.094 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project] 
+// Tcl Message: current_project Votechain 
+// Tcl Message: current_project memory_test 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new 
+// Tcl Message: file mkdir {H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new} 
+// Tcl Message: close [ open {H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new/BRAM.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new/BRAM.v}} 
+// Tcl Message: close [ open {H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new/sram.v} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sources_1/new/sram.v}} 
+// I (ck): Define Modules: addNotify
+dismissDialog("New Project"); // f (ck)
+// Tcl Message: current_project Votechain 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 84 seconds
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project memory_test 
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, BRAM.v]", 2, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, BRAM.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("BRAM.v", 193, 173); // ce (w, ck)
+selectCodeEditor("BRAM.v", 193, 173); // ce (w, ck)
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, ck)
+selectCodeEditor("BRAM.v", 100, 137); // ce (w, ck)
+typeControlKey((HResource) null, "BRAM.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "blk_mem_gen_1.v", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "blk_mem_gen_1.v", 'c'); // ce (w, ck)
+// [GUI Memory]: 115 MB (+879kb) [00:12:58]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, sram.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, sram.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v)]", 3); // B (D, ck)
+selectCodeEditor("sram.v", 154, 123); // ce (w, ck)
+typeControlKey((HResource) null, "sram.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BRAM (BRAM.v), blockchain_memory : sram (sram.v)]", 2, false); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "memory_tb"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+// Elapsed time: 13 seconds
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 32 seconds
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Command: 'file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new'
+// bx (ck):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: file mkdir H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new 
+// Tcl Message: file mkdir {H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new} 
+// Tcl Message: close [ open {H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new/memory_tb.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{H:/ESE 498_Capstone/memory test/memory_test/memory_test.srcs/sim_1/new/memory_tb.v}} 
+// [GUI Memory]: 122 MB (+1540kb) [00:13:57]
+// I (ck): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v)]", 7, false); // B (D, ck)
+selectCodeEditor("memory_tb.v", 27, 280); // ce (w, ck)
+// Elapsed time: 89 seconds
+closeMainWindow("Votechain - [H:/ESE 498_Capstone/Votechain/Votechain.xpr] - Vivado 2018.2"); // ck
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ck): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Close Project : addNotify
+dismissDialog("Close Project"); // A (ck)
+// Tcl Message: current_project Votechain 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 806 MB. GUI used memory: 66 MB. Current time: 4/18/19 12:52:13 AM GMT-05:00
+// 'b' command handler elapsed time: 3 seconds
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (ck)
+// Elapsed time: 65 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 1); // k (j, ck)
+floatView(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+dockFrame(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+floatView(PAResourceOtoP.PAViews_CODE, "memory_tb.v *"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("BRAM.v", 173, 304); // ce (w, ck)
+selectCodeEditor("BRAM.v", 95, 281); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("memory_tb.v", 198, 394); // ce (w, aG)
+// Elapsed time: 48 seconds
+selectCodeEditor("memory_tb.v", 191, 502); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 82, 533); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 68, 540); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 68, 540, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 68, 540); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 68, 540, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 127, 551); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 127, 551, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 127, 568); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 127, 568, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 104, 606); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 104, 606, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 104, 606); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 104, 606); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 85, 601); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 85, 601, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 112, 619); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 112, 619, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 113, 637); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 113, 637, false, false, false, false, true); // ce (w, aG) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("memory_tb.v", 132, 639); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 129, 646); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 143, 631); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 45, 636); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 159, 635); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 99, 640); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 233, 575); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 192, 609); // ce (w, aG)
+// Elapsed time: 78 seconds
+selectCodeEditor("memory_tb.v", 119, 620); // ce (w, aG)
+selectCodeEditor("BRAM.v", 68, 249); // ce (w, ck)
+selectCodeEditor("BRAM.v", 68, 249, false, false, false, false, true); // ce (w, ck) - Double Click
+floatView(PAResourceOtoP.PAViews_CODE, "BRAM.v *"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+selectCodeEditor("BRAM.v", 410, 149); // ce (w, aG)
+selectCodeEditor("BRAM.v", 167, 371); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("BRAM.v", 98, 243); // ce (w, aG)
+selectCodeEditor("BRAM.v", 98, 243, false, false, false, false, true); // ce (w, aG) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 164, 625); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 90, 260); // ce (w, aG)
+selectCodeEditor("BRAM.v", 90, 260, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 142, 629); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 81, 643); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 102, 382); // ce (w, aG)
+selectCodeEditor("BRAM.v", 102, 382, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 134, 651); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 189, 394); // ce (w, aG)
+selectCodeEditor("BRAM.v", 189, 394, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 127, 659); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+// [GUI Memory]: 129 MB (+1182kb) [00:22:06]
+selectCodeEditor("BRAM.v", 216, 421); // ce (w, aG)
+selectCodeEditor("BRAM.v", 216, 421, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 110, 648); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 69, 466); // ce (w, aG)
+selectCodeEditor("BRAM.v", 69, 466, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 274, 642); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 257, 652); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+// [GUI Memory]: 137 MB (+1700kb) [00:22:31]
+// Elapsed time: 10 seconds
+selectCodeEditor("BRAM.v", 200, 486); // ce (w, aG)
+selectCodeEditor("BRAM.v", 200, 486, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 38, 649); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 201, 501); // ce (w, aG)
+selectCodeEditor("BRAM.v", 201, 501, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 127, 658); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 74, 401); // ce (w, aG)
+selectCodeEditor("BRAM.v", 74, 401, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 86, 657); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 200, 412); // ce (w, aG)
+selectCodeEditor("BRAM.v", 200, 412, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 183, 655); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 206, 434); // ce (w, aG)
+selectCodeEditor("BRAM.v", 206, 434, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 256, 652); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 242, 452); // ce (w, aG)
+selectCodeEditor("BRAM.v", 242, 452, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 337, 636); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 304, 651); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("BRAM.v", 184, 470); // ce (w, aG)
+selectCodeEditor("BRAM.v", 184, 470, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 117, 663); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 108, 652); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 10, 381, false, false, false, true, false); // ce (w, aG) - Popup Trigger
+selectCodeEditor("memory_tb.v", 394, 352); // ce (w, aG)
+// Elapsed time: 16 seconds
+selectCodeEditor("BRAM.v", 77, 452); // ce (w, aG)
+selectCodeEditor("BRAM.v", 221, 429); // ce (w, aG)
+selectCodeEditor("BRAM.v", 313, 390); // ce (w, aG)
+// Elapsed time: 29 seconds
+selectCodeEditor("memory_tb.v", 98, 457); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 96, 452); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 137, 493); // ce (w, aG)
+selectCodeEditor("BRAM.v", 497, 18); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BRAM.v", 484, 169); // ce (w, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BRAM (BRAM.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BRAM (BRAM.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BRAM (BRAM.v)]", 6, true); // B (D, ck) - Node
+floatView(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// Elapsed time: 16 seconds
+selectCodeEditor("BRAM.v", 77, 381); // ce (w, aG)
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 143, 432); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 143, 432); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 201, 473); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 117, 434); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 117, 434, false, false, false, false, true); // ce (w, aG) - Double Click
+selectCodeEditor("memory_tb.v", 112, 476); // ce (w, aG)
+// Elapsed time: 99 seconds
+selectCodeEditor("memory_tb.v", 15, 448); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 138, 503); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 63, 436); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 266, 482); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("memory_tb.v", 295, 399); // ce (w, aG)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("memory_tb.v", 103, 382); // ce (w, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectCodeEditor("memory_tb.v", 135, 134); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 135, 134, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 438); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 52, 160); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 52, 160, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 54, 452); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 109, 181); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 109, 181, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 62, 463); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 93, 192); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 93, 192, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 61, 485); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 112, 246); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 60, 230); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 60, 230, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 55, 502); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 113, 251); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 113, 251, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 63, 522); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 104, 262); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 104, 262, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 96, 537); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 63, 554); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 92, 552); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 23, 553); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 518); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 143, 521); // ce (w, aG)
+// Elapsed time: 14 seconds
+selectCodeEditor("memory_tb.v", 106, 268); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 106, 268, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 63, 535); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 283); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 283); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 283, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 98, 547); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 299); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 119, 299, false, false, false, false, true); // ce (w, aG) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 98, 570); // ce (w, aG)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, aG)
+selectCodeEditor("memory_tb.v", 191, 532); // ce (w, aG)
+typeControlKey(null, null, 'z');
+selectCodeEditor("memory_tb.v", 282, 330); // ce (w, aG)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, aG)
+selectCodeEditor("memory_tb.v", 304, 347); // ce (w, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("memory_tb.v", 346, 203); // ce (w, aG)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dockFrame(PAResourceOtoP.PAViews_CODE, "memory_tb.v"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+// TclEventType: DG_GRAPH_GENERATED
+dockFrame(PAResourceOtoP.PAViews_CODE, "BRAM.v"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_CODE: Code: dock view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v)]", 6); // B (D, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 3); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v), BRAM : xil_defaultlib.bram]", 7, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v), BRAM (BRAM.v)]", 8); // B (D, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("memory_tb.v", 80, 142); // ce (w, ck)
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 3); // k (j, ck)
+selectCodeEditor("BRAM.v", 167, 76); // ce (w, ck)
+selectCodeEditor("BRAM.v", 89, 23); // ce (w, ck)
+typeControlKey((HResource) null, "BRAM.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+selectCodeEditor("memory_tb.v", 130, 45); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 120, 97); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 99, 48); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 3); // k (j, ck)
+selectCodeEditor("BRAM.v", 296, 201); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+selectCodeEditor("memory_tb.v", 84, 93); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 160, 97); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("memory_tb.v", 167, 94); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 124, 90); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 124, 90, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 165, 92); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 364, 91); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 260, 91); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 313, 90); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 313, 90, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 341, 97); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 445, 124); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 307, 58); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BRAM.v", 3); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory_tb.v", 2); // k (j, ck)
+selectCodeEditor("memory_tb.v", 34, 96); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'c'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 410, 99); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 444, 211); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, memory_tb (memory_tb.v)]", 6); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("memory_tb.v", 199, 170); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("memory_tb.v", 79, 276); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 180 seconds
+selectCodeEditor("memory_tb.v", 38, 296); // ce (w, ck)
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 209, 279); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 138, 253); // ce (w, ck)
+selectCodeEditor("memory_tb.v", 146, 279); // ce (w, ck)
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "memory_tb.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 64 MB. Current time: 4/18/19 1:22:16 AM GMT-05:00
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 55 MB. Current time: 4/18/19 1:52:17 AM GMT-05:00
